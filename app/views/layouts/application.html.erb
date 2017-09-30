@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Exam3</title>
+  <title>giltystagram</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<header>
+  <ul>
+    <h3><li><%= link_to "Futurestagram", root_path %></li></h3>
+  </ul>
+</header>
+
 <%= yield %>
 
-</body>
+<footer>
+  <p>運営会社トリックマーケット</p>
+  <p>(c) 2117 Copyright Trick Market</Marc>.</p>
+</footer>
+
+
 </html>

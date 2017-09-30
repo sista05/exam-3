@@ -1,2 +1,21 @@
-<h1>Topics#index</h1>
-<p>Find me in app/views/topics/index.html.erb</p>
+<br><br><br><br>
+<% @topics.each do |topic| %>
+<div class="container">
+  <div class="row">
+    <div class="wrapper col-xs-6 col-sm-4 col-md-4">
+      <h5><p><%= image_tag topic.image%></p></h5>
+      <h5><p><%= topic.user.name %></p></h5>
+      <h5><p><%= topic.content %></p></h5>
+      <%= link_to "編集", edit_topic_path(topic.id), class: 'btn btn-primary btn-success' %>
+      <%= link_to "削除", topic_path(topic.id), method: :delete, class:'btn btn-primary btn-success' %>
+    </div>
+    <% end %>
+  </div>
+  <p><%= notice %></p>
+  <%= link_to "投稿する", new_topic_path, class: 'btn btn-default' %>
+</div>
+
+      
+      
+
+

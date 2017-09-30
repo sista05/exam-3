@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Futurestagram</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="col-sm-8" id="tweet_text">
+  <img src="<%= asset_path "image.jpg" %> "width=150%>
+ </div>
+ 
+ <br> <br> <br> <br> <br> <br> <br> <br>
+    <div class="wrapper col-sm-4" id="tweets">
+          <p class="flash"><%= notice %><%= alert %></p>
+     <% if user_signed_in? %>
+     <br> <br>
+    <li><%= link_to 'マイページ', edit_user_registration_path %></li>
+    <br>
+    <li><%= link_to "投稿写真", topics_path , class: 'glyphicon glyphicon-camera' %></li>
+    <br>
+    <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+    <br> <br>
+    <% else %>
+    <br> <br>
+    <li><%= link_to 'ログイン', new_user_session_path  %></li>
+    <br>
+    <li><%= link_to 'サインアップ', new_user_registration_path %></li>
+    <br> <br> 
+    <% end %>
+ </div>
+
+<!--
+  <header>
+  <ul>
+    <li><class="glyphicon glyphicon-home"><a href="#">トップページ</a></li>
+    <li><a href="#">お問い合わせ</a></li>
+    <li><a href="#">ブログ</a></li>
+  </ul>
+</header>
+
+<section class="about">
+  <h2>About Achieve</h2>
+  <p>Achieveは受講生のためにつくられた教材<br>
+    Achieveを作ることでSecondTeamに参加する力を身につけます。
+  </p>
+  <p>Achieveはタスク管理アプリです。<br>
+    チームメンバが今どのようなタスクを行っているかリアルタイムで把握できる。
+  </p>
+</section>
+-->
+  
+<footer>
+  <p>運営会社トリックマーケット</p>
+  <p>© 2117 Copyright Trick Market.</p>
+</footer>
+
+</body>
+</html>
