@@ -50,7 +50,8 @@ class TopicsController < ApplicationController
   end
   
   def show
-
+    @comment = @topic.comments.build
+    @comments = @topic.comments
   end
 
   private

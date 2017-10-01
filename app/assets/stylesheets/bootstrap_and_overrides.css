@@ -3,31 +3,34 @@
 
   Static version of css will use Glyphicons sprites by default
   =require twitter-bootstrap-static/sprites
-*/
-
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+  
 
 .btn-primary {
   color: #fff;
-  background-color: gray;
-  border-color: gray;
+  background-color: blue;
+  border-color: blue;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: gray;
-  border-color: gray;
+  background-color: blue;
+  border-color: blue;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: gray;
-  border-color: gray;
+  background-color: blue;
+  border-color: blue;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: gray;
-  border-color: gray;
+  background-color: blue;
+  border-color: blue;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -39,8 +42,8 @@
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #fff;
-  background-color: gray;
-  border-color: gray;
+  background-color: blue;
+  border-color: blue;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -56,10 +59,10 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: gray;
-  border-color: gray;
+  background-color: blue;
+  border-color: blue;
 }
 .btn-primary .badge {
-  color: gray;
+  color: blue;
   background-color: #fff;
 }

@@ -17,7 +17,7 @@
 
 header {
   width: 100%;
-  background-color: white;
+  background-color: blue;
   height: 70px;
   position: fixed; 
   z-index: 10;
@@ -30,9 +30,9 @@ header ul {
 
 header ul a {
     display: block;
-    padding: 15px;
+/*    padding: 40px; */
     text-decoration: none;
-    color: gray;
+    color: white;
 }
 
 header li {
@@ -51,7 +51,7 @@ tweet_text {
     background: white;
     border-radius: 4px;
     width: 150%;
-        color: gray;
+        color: blue;
 }
 
 
@@ -61,7 +61,7 @@ tweet_text {
     padding: 30px;
     text-align: left;
     word-wrap: break-word;
-    color: gray;
+    color: blue;
 }
 
 /*
@@ -81,9 +81,9 @@ tweet_text {
 
 footer {
     width: 100%;
-    background-color: white;
+    background-color: blue;
     padding: 20px 0 10px 0;
-    color: gray;
+    color: white;
     margin: auto;
     font-size: 12px;
     position: fixed;

@@ -5,11 +5,11 @@ class NoticeMailer < ApplicationMailer
   #
   #   en.notice_mailer.sendmail_pic.subject
   #
-  def sendmail_pic(pic)
-    @pic = pic
+  def sendmail_topic(topic)
+    @topic = topic
 
     mail to: "sista05@y4.dion.ne.jp",
-    subject: '【giltystagram】写真が投稿されました'
+    subject: '【Fakebuss】写真が投稿されました'
   end
   
   def sendmail_contacts(contacts)
