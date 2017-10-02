@@ -14,13 +14,13 @@
 }
 .navbar-default {
   .navbar-brand {
-    color: #ccc;
+    color: white;
     &:hover {
       color: white;
     }
   }
   .navbar-nav > li > a {
-    color: #ccc;
+    color: white;
     
     &:hover, &:focus {
       color: white;
@@ -159,12 +159,14 @@ footer {
 html {
     position: relative;
     min-height: 100%;
+      margin:100px 0px 0px 0px;
 }
 
 body {
     text-align: center;
     background: #FAFAFA;
     color: gray;
+
 }
 
 li {

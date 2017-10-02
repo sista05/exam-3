@@ -20,7 +20,7 @@ header {
   background-color: blue;
   height: 70px;
   position: fixed; 
-  z-index: 10;
+      top: 0px;  
 }
 
 header ul {
@@ -30,6 +30,7 @@ header ul {
 
 header ul a {
     display: block;
+      margin-left: 30px;
 /*    padding: 40px; */
     text-decoration: none;
     color: white;
@@ -47,22 +48,6 @@ header ul:after {
 
 }
 
-tweet_text {
-    background: white;
-    border-radius: 4px;
-    width: 150%;
-        color: blue;
-}
-
-
-.tweets {
-    border-bottom: 1px solid #ccc;
-    background: white;
-    padding: 30px;
-    text-align: left;
-    word-wrap: break-word;
-    color: blue;
-}
 
 /*
 .row {

@@ -5,9 +5,18 @@ Rails.application.routes.draw do
     registrations: "users/registrations",
     omniauth_callbacks: "users/omniauth_callbacks"
   }
-  resources :topics do
+  
+  
+resources :topics do
   resources :comments
   post :confirm, on: :collection
+end
+
+resources :users, only: [:index, :show]
+resources :relationships, only: [:create, :destroy]
+
+resources :conversations do
+  resources :messages
 end
 
   if Rails.env.development?
