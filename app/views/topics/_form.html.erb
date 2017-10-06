@@ -12,14 +12,16 @@
 </div>
 <% end %>
 
-
-<%= f.label :写真 %>
-<%= f.file_field :image, class: 'center-block' %>
-<br>
-
-<%= f.label :ひとこと %>
+<%= f.label :投稿内容 %>
 <%= f.text_field :content, class: 'form-control'%>
 <br>
+
+<%= f.label :写真 %>
+<%= topic_img(@topic) if topic_img(@topic) %>
+<%= f.file_field :image, class: 'center-block' %>
+    <%= f.hidden_field :image_cache %>
+<br>
+
 <%= f.submit '投稿', class: 'btn btn-primary btn-success' %>
 <% end %>
 <br>

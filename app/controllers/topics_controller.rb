@@ -1,8 +1,8 @@
 class TopicsController < ApplicationController
-   before_action :authenticate_user!, only: [:index, :new, :confirm, :create]
+   before_action :authenticate_user!, only: [:index, :new, :confirm, :create, :show]
   before_action :set_topic, only: [:edit, :update, :destroy, :show]
   def index
-    @topics = Topic.all
+    @topics = Topic.order(created_at: :desc).all
   end
   
   #def confirm
@@ -23,7 +23,7 @@ class TopicsController < ApplicationController
     @topic = Topic.new(topics_params)
     @topic.user_id = current_user.id
     if @topic.save
-        redirect_to topics_path, notice: "写真を投稿しました!"
+        redirect_to topics_path, notice: "投稿しました!"
         NoticeMailer.sendmail_topic(@topic).deliver
     else
         render action: 'new'
@@ -37,7 +37,7 @@ class TopicsController < ApplicationController
   def update
 
     if @topic.update(topics_params)
-      redirect_to topics_path, notice: "写真を更新しました!"
+      redirect_to topics_path, notice: "更新しました!"
     else
     render action: 'edit'
     end
@@ -46,12 +46,13 @@ class TopicsController < ApplicationController
   def destroy
 
     @topic.destroy
-    redirect_to topics_path, notice: "写真を削除しました!"
+    redirect_to topics_path, notice: "投稿を削除しました!"
   end
   
   def show
     @comment = @topic.comments.build
     @comments = @topic.comments
+    Notification.find(params[:notification_id]).update(read: true) if params[:notification_id]
   end
 
   private

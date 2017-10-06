@@ -1,3 +1,26 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+input[type="file"]{
+    width: 300px;
+ margin: 0 auto;
+}
+
+.form-control {
+  width: 300px;
+margin: 0 auto;
+  
+}
+
+input[type="submit"].btn-block{
+    width: 300px;
+ margin: 0 auto;
+}
+
+
+.container{
+  padding-bottom: 85px;
+}
+

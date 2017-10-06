@@ -17,9 +17,10 @@
 
 header {
   width: 100%;
-  background-color: blue;
-  height: 70px;
+  background-color: #3b5998;
+  height: 82px;
   position: fixed; 
+  z-index: 10;
       top: 0px;  
 }
 
@@ -66,7 +67,7 @@ header ul:after {
 
 footer {
     width: 100%;
-    background-color: blue;
+    background-color: #3b5998;
     padding: 20px 0 10px 0;
     color: white;
     margin: auto;
@@ -74,3 +75,4 @@ footer {
     position: fixed;
     bottom: 0;
 }
+

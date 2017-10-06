@@ -10,7 +10,7 @@
     text-align: left;
     word-wrap: break-word;
   }
-  z-index: -1;
+
   background: white;
 }
 input[type="submit"].btn-block{
@@ -19,4 +19,10 @@ input[type="submit"].btn-block{
 
 .container{
   padding-bottom: 85px;
+}
+
+body {
+    text-align: center;
+    background-color: gray;
+    color: gray;
 }
