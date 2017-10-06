@@ -23,12 +23,12 @@ input[type="submit"].btn-block{
 }
 
 .container-fluid{
-  background-image: url("test.png");
+  background-image: image-url("test.png");
 }
 
 body {
     text-align: center;
-    background-image: url("test.png");
+    background-image: image-url("test.png");
     background-attachment:fixed;    
     color: white;
 }
