@@ -14,13 +14,13 @@
 }
 .navbar-default {
   .navbar-brand {
-    color: #ccc;
+    color: white;
     &:hover {
       color: white;
     }
   }
   .navbar-nav > li > a {
-    color: #ccc;
+    color: white;
     
     &:hover, &:focus {
       color: white;
@@ -37,7 +37,7 @@
 }
 @media (max-width: 767px) {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #ccc;
+    color: white;
     text-align: center;
     &:hover, &:focus {
       color: white;
@@ -163,7 +163,6 @@ html {
 
 body {
     text-align: center;
-    background: #FAFAFA;
     color: gray;
 }
 

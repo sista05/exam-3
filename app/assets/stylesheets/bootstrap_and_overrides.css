@@ -66,3 +66,8 @@ fieldset[disabled] .btn-primary.focus {
   color: #3b5998;
   background-color: #fff;
 }
+
+html {
+    position: relative;
+    min-height: 100%;
+}

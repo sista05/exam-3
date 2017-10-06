@@ -11,13 +11,20 @@
         <strong>作成時間:</strong>
         <%= topic.created_at.strftime("%y/%m/%d %p %l:%M") %>
       </p>
-        <p><%= topic.content %></p>
+          <%= thumb_img(User.find(topic.user_id))%>
+          <%= User.find(topic.user_id).name %>
+          <%#= profile_img(User.find(topic.user_id))%>
         <%= link_to topic_path(topic) do %>
-          <h4><strong><%= image_tag topic.image %></strong></h4>
+        <h4><strong><%= topic.title %></strong></h4>
         <% end %>
+        <p><%= topic.content %></p>
 
+          <h4><strong><%= image_tag topic.image %></strong></h4>
+
+      <% if current_user.id == topic.user_id %>
       <%= link_to "編集", edit_topic_path(topic.id), class: 'btn btn-primary btn-success' %>
       <%= link_to "削除", topic_path(topic.id), method: :delete, class:'btn btn-primary btn-success' %>
+      <% end %>
     </div>
     <% end %>
   </div>

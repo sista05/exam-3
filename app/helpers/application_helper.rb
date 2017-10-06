@@ -10,6 +10,16 @@ module ApplicationHelper
         image_tag(img_url, alt: user.name, :size => "200x200")
     end
     
+        def thumb_img(user)
+        return image_tag(user.avatar, alt: user.name,:size => "20x20") if user.avatar?
+
+        unless user.provider.blank?
+            img_url = user.image_url
+        else
+            img_url = 'no_image.png'
+        end
+        image_tag(img_url, alt: user.name, :size => "20x20")
+    end
   def resource_name
     :user
   end

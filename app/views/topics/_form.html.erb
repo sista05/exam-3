@@ -1,3 +1,4 @@
+<br><br><br><br>
 
 <%= form_for(@topic) do |f| %>
 <% if @topic.errors.any? %>
@@ -11,6 +12,10 @@
     </ul>
 </div>
 <% end %>
+
+<%= f.label :タイトル %>
+<%= f.text_field :title, class: 'form-control'%>
+<br>
 
 <%= f.label :投稿内容 %>
 <%= f.text_field :content, class: 'form-control'%>

@@ -22,11 +22,13 @@ header {
   position: fixed; 
   z-index: 10;
       top: 0px;  
+color: white;
 }
 
 header ul {
     margin: 0 auto;
     list-style: none;
+    
 }
 
 header ul a {
@@ -41,6 +43,7 @@ header li {
     float: left;
     width: auto;
     letter-spacing: normal;
+    
 }
 
 header ul:after {
