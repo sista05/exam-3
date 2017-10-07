@@ -1,4 +1,5 @@
 module TopicsHelper
+    
     def topic_img(topic)
         return image_tag(topic.image) if topic.image?
 

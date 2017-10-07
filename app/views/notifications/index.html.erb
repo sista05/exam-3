@@ -7,7 +7,7 @@
       <span><%= notification.read ? '既読' : '未読' %></span>
       <p>
         <%= notification.comment.user.try(:name) %>さんが
-        あなたのブログ（<%= link_to "#{notification.comment.topic.title}", topic_path(notification.comment.topic, notification_id: notification.id) %>）にコメントしました。
+        あなたの投稿（<%= link_to "#{notification.comment.topic.title}", topic_path(notification.comment.topic, notification_id: notification.id) %>）にコメントしました。
       </p>
       <p><%= posted_time(notification.created_at) %></p>
     </li>

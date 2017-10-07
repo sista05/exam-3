@@ -20,6 +20,7 @@ module ApplicationHelper
         end
         image_tag(img_url, alt: user.name, :size => "20x20")
     end
+    
   def resource_name
     :user
   end

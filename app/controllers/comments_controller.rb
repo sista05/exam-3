@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
         format.js { render :index }
        unless @comment.topic.user_id == current_user.id
           Pusher.trigger("user_#{@comment.topic.user_id}_channel", 'comment_created', {
-            message: 'あなたの作成したブログにコメントが付きました'
+            message: 'あなたの投稿にコメントが付きました'
           })
         end
         Pusher.trigger("user_#{@comment.topic.user_id}_channel", 'notification_created', {
