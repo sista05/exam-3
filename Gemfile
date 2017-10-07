@@ -69,5 +69,7 @@ gem 'mini_magick'
 gem 'pusher'
 gem 'fog'
 
-  gem 'dotenv-rails'
-  gem 'unicorn'
+gem 'dotenv-rails'
+gem 'unicorn'
+
+gem 'faker'
